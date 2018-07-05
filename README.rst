@@ -138,37 +138,37 @@ To override Django Logging settings, add a dictionary in your project's settings
 Default Settings
 ----------------
 
-:python:`CONSOLE_LOG = True` - Log to console.
+```CONSOLE_LOG = True``` - Log to console.
 
-:python:`SQL_LOG = True` - Log SQL queries.
+```SQL_LOG = True``` - Log SQL queries.
 
-:python:`SQL_THRESHOLD = 0.5` - Log slow queries only.
+```SQL_THRESHOLD = 0.5``` - Log slow queries only.
 
-:python:`LOG_LEVEL = 'debug'` - If settings.DEBUG is set to True, otherwise LOG_LEVEL is set to 'info'
+```LOG_LEVEL = 'debug'``` - If settings.DEBUG is set to True, otherwise LOG_LEVEL is set to 'info'
 
-:python:`DISABLE_EXISTING_LOGGERS = True` - Set this to False if you want to combine with multiple loggers.
+```DISABLE_EXISTING_LOGGERS = True``` - Set this to False if you want to combine with multiple loggers.
 
-:python:`LOG_PATH = '{}/logs'.format(settings.BASE_DIR)` - If the logs folder does not exist, it will be created.
+```LOG_PATH = '{}/logs'.format(settings.BASE_DIR)``` - If the logs folder does not exist, it will be created.
 
-:python:`IGNORED_PATHS = ['/admin', '/static', '/favicon.ico']` - List of URL endpoints to ignore.
+```IGNORED_PATHS = ['/admin', '/static', '/favicon.ico']``` - List of URL endpoints to ignore.
 
-:python:`RESPONSE_FIELDS = ('status', 'reason', 'charset', 'headers', 'content')` - List of response fields to log.
+```RESPONSE_FIELDS = ('status', 'reason', 'charset', 'headers', 'content')``` - List of response fields to log.
 
-:python:`CONTENT_JSON_ONLY = True` - Log response content only if its a JSON document.
+```CONTENT_JSON_ONLY = True``` - Log response content only if its a JSON document.
 
-:python:`ROTATE_MB = 100` - Maximum size in MB that the log file can have before it gets rotated.
+```ROTATE_MB = 100``` - Maximum size in MB that the log file can have before it gets rotated.
 
-:python:`ROTATE_COUNT = 10` - Maximum number of rotated log files.
+```ROTATE_COUNT = 10``` - Maximum number of rotated log files.
 
-:python:`INDENT_CONSOLE_LOG = 2` - Indent console log by "n" spaces.
+```INDENT_CONSOLE_LOG = 2``` - Indent console log by "n" spaces.
 
-:python:`ELASTICSEARCH_ENABLED = False` - Set to yes to enable elasticsearch support.
+```ELASTICSEARCH_ENABLED = False``` - Set to yes to enable elasticsearch support.
 
-:python:`ELASTICSEARCH_HOSTS = ["localhost"]` - Elasticsearch hosts
+```ELASTICSEARCH_HOSTS = ["localhost"]``` - Elasticsearch hosts
 
-:python:`ELASTICSEARCH_INDEX = "log-in-django-json"` - Elasticsearch index name
+```ELASTICSEARCH_INDEX = "log-in-django-json"``` - Elasticsearch index name
 
-:python:`ELASTICSEARCH_SSL = False` - Elasticsearch connection via SSL (:443)
+```ELASTICSEARCH_SSL = False``` - Elasticsearch connection via SSL (:443)
 
-:python:`ELASTICSEARCH_AUTH = ('user', 'password)` - Elasticsearch authorization credentials (user, password). Defaults to `None`
+```ELASTICSEARCH_AUTH = ('user', 'password)``` - Elasticsearch authorization credentials (user, password). Defaults to `None`
 
